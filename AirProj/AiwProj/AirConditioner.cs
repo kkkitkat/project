@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AiwProj
 {
-    internal class AirConditioner
+    public class AirConditioner
     {
         private int temperature;
 
