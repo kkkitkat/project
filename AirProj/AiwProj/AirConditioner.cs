@@ -70,6 +70,27 @@ namespace AiwProj
                 Temperature--;
         }
 
+        /// <summary>
+        /// Повышение интенсивности на 1 шкалу. Если значение 10, то повышение приводит к значению 1
+        /// </summary>
+        public void IncreaseFanIntensity()
+        {
+            if (FanIntensity < 10)
+                FanIntensity++;
+            else
+                FanIntensity = 1;
+        }
+
+        /// <summary>
+        /// Понижение интенсивности на 1 шкалу. Если значение 1, то понижение приводит к значению 10
+        /// </summary>
+        public void DecreaseFanIntensity()
+        {
+            if (FanIntensity > 1)
+                FanIntensity--;
+            else
+                FanIntensity = 10;
+        }
 
 
 
